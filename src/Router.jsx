@@ -20,9 +20,9 @@ const Router = () => {
         { path: "/", element: <Home /> },
         {
           path: "/product/:id",
-          element: <ProductDetails cart={cart} setCart={setCart} />,
+          element: <ProductDetails cart={cart} />,
         },
-        { path: "cart", element: <Cart /> },
+        { path: "cart", element: <Cart cart={cart} setCart={setCart} /> },
       ],
     },
   ]);
